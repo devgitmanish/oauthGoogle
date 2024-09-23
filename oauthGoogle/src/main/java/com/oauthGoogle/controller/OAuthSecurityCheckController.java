@@ -1,0 +1,14 @@
+package com.oauthGoogle.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class OAuthSecurityCheckController {
+
+    @GetMapping("/payment-gateway")
+    public String welcome(){
+        return "validated with google OAuth Security payment gateway";
+    }
+}
